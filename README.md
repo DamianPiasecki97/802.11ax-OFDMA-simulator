@@ -100,7 +100,7 @@ The program does not require special installation. It is only necessary to clone
 
 ### Simulation settings
 
-The program has been implemented in such a way that the user can modify the simulation parameters. The simulation settings can be changed by modifying the values of constants defined in the simulation_config.py file.
+The program has been implemented in such a way that the user can modify the simulation parameters. The simulation settings can be changed by modifying the values of constants defined in the `simulation_config.py` file.
 Below is the definition of the simulation parameters:
 * LOGS_DIR - path to the file where events occurring in the program are logged
 * SIM_TIME - simulation time
@@ -119,9 +119,9 @@ Below is the definition of the simulation parameters:
 
 ### Starting the simulation
 
-To run the program, it is necessary to execute the simulation.py script, for example, using the python3 command : 
+To run the program, it is necessary to execute the `simulation.py` script, for example, using the python3 command : 
    ```sh
-   https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator.git
+   python3 simulation.py
    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
