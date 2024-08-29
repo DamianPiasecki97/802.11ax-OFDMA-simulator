@@ -35,11 +35,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#simulation-settings">Simulation settings</a></li>
+        <li><a href="#starting-the-simulation">Starting the simulation</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -78,17 +77,16 @@ This project was moved from a previous private repository.
 ### Prerequisites
 
 All Python modules required to run the program are listed in `requirements.txt` file.
-You can install all modules using this command:
-* npm
-  ```sh
-  pip install -r requirements.txt
-  ```
+You can install all modules using below command:
+```sh
+pip install -r requirements.txt
+```
 
 ### Installation
 
-The program does not require special installation; simply copy the repository: 
+The program does not require special installation. It is only necessary to clone the repository: 
    ```sh
-   https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator.git
+   git clone https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator.git
    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,68 +95,45 @@ The program does not require special installation; simply copy the repository:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Simulation settings
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The program has been implemented in such a way that the user can modify the simulation parameters. The simulation settings can be changed by modifying the values of constants defined in the simulation_config.py file.
+Below is the definition of the simulation parameters:
+* LOGS_DIR - path to the file where events occurring in the program are logged
+* SIM_TIME - simulation time
+* NUMBER_OF_AP - number of access points participating in the transmission
+* NUMBER_OF_STATIONS - number of stations participating in the transmission
+* SEED - seed value of the generator
+* DIRECTION - transmission direction (UL or DL)
+* MCS - number specifying the modulation and coding scheme, in accordance with the IEEE 802.11ax extension
+* DATA_RATE - data rate, this value is used in the program when the DATA_RATE_PREDEFINED parameter is set to true
+* RU_LIST - list of Resource Units (RUs) that can be assigned to stations during the simulation, this list is used in the program when the RU_PREDEFINED parameter is set to true
+* RTS_PROCEDURE_ENABLED - boolean variable indicating whether the MU-RTS/CTS procedure should be part of the transmission.
+* BSRP_PROCEDURE_ENABLED - boolean variable indicating whether the BSRP procedure should be part of the transmission
+* MPDU_AGGREGATION_ENABLED - boolean variable indicating whether frame aggregation will be active during the transmission
+* RU_PREDEFINED - boolean variable indicating whether the list of Resource Units (RUs) should be predefined. If set to true, the list defined as the RU_LIST parameter will be used for calculations in the program
+* DATA_RATE_PREDEFINED - boolean variable indicating whether the data rate should be predefined. If set to true, the value defined as the DATA_RATE parameter will be used for calculations in the program
 
+### Starting the simulation
+
+To run the program, it is necessary to execute the simulation.py script, for example, using the python3 command : 
+   ```sh
+   https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator.git
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Top contributors:
-
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
+<!-- LICENSE 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+-->
 
 <!-- CONTACT -->
 ## Contact
 
-Damian Piasecki - [([https://twitter.com/your_username](https://www.linkedin.com/in/piasecki-damian/)) 
+Damian Piasecki - https://www.linkedin.com/in/piasecki-damian/
 
 Project Link: https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator
 
