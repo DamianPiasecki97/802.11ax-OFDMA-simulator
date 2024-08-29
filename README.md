@@ -2,20 +2,13 @@
 
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
 
-  <h3 align="center">802.11ax-OFDMA-simulation</h3>
+  <!-- <h3 align="center">802.11ax-OFDMA-simulation</h3> -->
 
-  <p align="center">
+  <p align="right">
     Simulator of the OFDMA mechanism of the IEEE 802.11ax standard
     <br />
     <a href="https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator"><strong>Explore the docs »</strong></a>
@@ -59,14 +52,22 @@ One of the latest extensions of the IEEE 802.11 standard is the 802.11ax extensi
 
 The increase in transmission efficiency has been made possible by employing techniques such as MU-MIMO (multi-user multiple input multiple output) and OFDMA (orthogonal frequency-division multiple access), which allow for the simultaneous handling of multiple end users.
 
+The goal of the project was to create a simulator for the operation of an IEEE 802.11ax network, implementing the OFDMA mechanism. It was decided that the developed program would meet the following assumptions:
+
+➢ The implementation of the network operation, particularly the OFDMA mechanism, will comply with the IEEE 802.11ax extension.
+➢ During the simulation, transmission will occur in only one selected direction — either uplink (UL) or downlink (DL).
+➢ The simulation will be able to run using multiple local wireless networks — the program will implement the possibility of using multiple access points within a given area, each communicating with a different group of stations. The access points will operate within a common range.
+➢ Data frames transmitted during the transmission can be aggregated to improve network throughput. The number of aggregated frames will be determined to use the TXOPlimit time as efficiently as possible. This is a parameter of the EDCA mechanism (enhanced distributed channel access), which represents the period during which the access point can conduct transmission.
+➢ The user will have the option to choose simulation parameters, such as the transmission direction, the modulation and coding scheme used, the number of stations and access points involved in the transmission, and the duration of the simulation.
+
+This project was transferred from a previous private repository.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
+* [![Python][Python]][Python-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -189,20 +190,7 @@ Project Link: https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/DamianPiasecki97/802.11ax-OFDMA-simulator
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Python]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/piasecki-damian/
+[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
-[SimPy]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[SimPy-url]: [https://reactjs.org/](https://simpy.readthedocs.io/en/latest/)
