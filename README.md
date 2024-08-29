@@ -4,11 +4,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="left">
 
   <!-- <h3 align="center">802.11ax-OFDMA-simulation</h3> -->
 
-  <p align="right">
+  <p align="left">
     Simulator of the OFDMA mechanism of the IEEE 802.11ax standard
     <br />
     <a href="https://github.com/DamianPiasecki97/802.11ax-OFDMA-simulator"><strong>Explore the docs »</strong></a>
@@ -54,20 +54,18 @@ The increase in transmission efficiency has been made possible by employing tech
 
 The goal of the project was to create a simulator for the operation of an IEEE 802.11ax network, implementing the OFDMA mechanism. It was decided that the developed program would meet the following assumptions:
 
-➢ The implementation of the network operation, particularly the OFDMA mechanism, will comply with the IEEE 802.11ax extension.
-➢ During the simulation, transmission will occur in only one selected direction — either uplink (UL) or downlink (DL).
-➢ The simulation will be able to run using multiple local wireless networks — the program will implement the possibility of using multiple access points within a given area, each communicating with a different group of stations. The access points will operate within a common range.
-➢ Data frames transmitted during the transmission can be aggregated to improve network throughput. The number of aggregated frames will be determined to use the TXOPlimit time as efficiently as possible. This is a parameter of the EDCA mechanism (enhanced distributed channel access), which represents the period during which the access point can conduct transmission.
-➢ The user will have the option to choose simulation parameters, such as the transmission direction, the modulation and coding scheme used, the number of stations and access points involved in the transmission, and the duration of the simulation.
+* The implementation of the network operation, particularly the OFDMA mechanism, will comply with the IEEE 802.11ax extension.
+* During the simulation, transmission will occur in only one selected direction — either uplink (UL) or downlink (DL).
+* The simulation will be able to run using multiple local wireless networks — the program will implement the possibility of using multiple access points within a given area, each communicating with a different group of stations. The access points will operate within a common range.
+* Data frames transmitted during the transmission can be aggregated to improve network throughput. The number of aggregated frames will be determined to use the TXOPlimit time as efficiently as possible. This is a parameter of the EDCA mechanism (enhanced distributed channel access), which represents the period during which the access point can conduct transmission.
+* The user will have the option to choose simulation parameters, such as the transmission direction, the modulation and coding scheme used, the number of stations and access points involved in the transmission, and the duration of the simulation.
 
-This project was transferred from a previous private repository.
+This project was moved from a previous private repository.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [![Python][Python]][Python-url]
+[![Python][Python]][Python-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
