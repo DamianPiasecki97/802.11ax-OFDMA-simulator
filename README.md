@@ -34,9 +34,13 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
         <li><a href="#simulation-settings">Simulation settings</a></li>
         <li><a href="#starting-the-simulation">Starting the simulation</a></li>
+      </ul>
+    </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
